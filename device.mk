@@ -26,3 +26,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
+
+# PE gapps flags
+# we have to disable these in order to fit into system size
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_SUPPORTS_QUICK_TAP := false
+
+
